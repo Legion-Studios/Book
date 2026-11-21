@@ -111,6 +111,8 @@ class CfgVehicles {
         ls_dispenser_activationSelection[] = {"hiddenSelectionName", "#(rgb,8,8,3)color(0.9,0,0.2,0.7)", "#(rgb,8,8,3)color(1,0,0,0.7)"}; // Name in hiddenSelections, texture to use when dispenser is active, texture to use when dispener fails to spawn a unit because hitpoint is destroyed
         ls_dispenser_unitAnimation = "ls_droid_folded"; // Animation to use for while a unit is on the rack
 
+        ls_dispenser_factions[] = {}; // Whitelist of CfgFactionClasses this dispenser can use, empty = any faction
+
         // Additionally, created units will be spawned at and attached to the `Spawn%1` memory point. %1 is placeholder for hatch number (1 - hatchCount)
 
         class HitPoints {
